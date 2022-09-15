@@ -22,14 +22,101 @@ body{
 
 .content{
   display: grid;
+  gap: 1rem;
+}
+
+.screen{
+  background: rgb(246, 246, 246);
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  text-align: right;
+  font-family: monospace;
+  font-size: 2.6rem;
+}
+
+.all-button{
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  grid-template-areas: 
+    'a b c d'
+    'e f g h'
+    'i j k l'
+    'm n o l'
+    'p q r r';
+}
+
+.one{
+  grid-area: m;
+}
+.two{
+  grid-area: n;
+}
+.three{
+  grid-area: o;
+}
+.four{
+  grid-area: i;
+}
+.five{
+  grid-area: j;
+}
+.six{
+  grid-area: k;
+}
+.seven{
+  grid-area: e;
+}
+.eight{
+  grid-area: f;
+}
+.nine{
+  grid-area: g;
+}
+.zero{
+  grid-area: p;
+}
+.point{
+  grid-area: q;
+}
+.plus{
+  grid-area: l;
+}
+.minus{
+  grid-area: h;
+}
+.multiply{
+  grid-area: d;
+}
+.devide{
+  grid-area: c;
+}
+.equal{
+  grid-area: r;
+}
+.all-clear{
+  grid-area: a;
+}
+.back-space{
+  grid-area: b;
 }
 
 button{
   width: 50px;
   height: 50px;
   font-size: 2.4rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  /* background: hsla(0, 0%, 50%, 0.5); */
+  box-shadow: 2px 2px 2px 1px hsla(0, 0%, 50%, 0.5);
+  transition: all 200ms linear;
+}
+
+button:active{
+  box-shadow: 0px 0px 0px 0px hsla(0, 0%, 50%, 0.3);
 }
 
 .plus{
@@ -44,5 +131,10 @@ button{
   height: 100%;
   grid-row: 5 / 6;
   grid-column: 3 / 5;
-  
+  background: hsl(110, 90%, 46%);
+  color: hsl(0, 0%, 100%);
+}
+
+.all-clear{
+  background: hsl(0, 84%, 64%);
 }
