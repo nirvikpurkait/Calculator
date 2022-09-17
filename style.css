@@ -24,6 +24,9 @@ body{
   display: grid;
   gap: 1rem;
   scale: 1.5;
+  background: grey;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .screen{
@@ -135,7 +138,7 @@ button{
   border: 0;
   border-radius: 5px;
   /* background: hsla(0, 0%, 50%, 0.5); */
-  box-shadow: 2px 2px 2px 1px hsla(0, 0%, 50%, 0.5);
+  box-shadow: 2px 2px 2px 1px hsla(0, 3%, 80%, 0.5);
   transition: all 200ms linear;
 }
 
